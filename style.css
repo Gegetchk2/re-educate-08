@@ -1,0 +1,188 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body {
+    background-color:#131862;
+}
+.road {
+    width: 100%;
+    height: 200px;
+    background-color: grey;
+    margin-top: 250px;
+    display: flex;
+    gap: 20px;
+    padding-top: 95px;
+}
+.white_lines {
+    width: 50px;
+    height: 10px;
+    background-color: white;
+}
+img {
+    height: 100px;
+    width: 100px;
+}
+.car {
+    position: relative;
+}
+.first_car {
+    position: absolute;
+    right: 50px;
+    animation-name: moveCar1;
+    animation-duration: 10s;
+    animation-delay: 1ms;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    bottom: 85px;
+}
+.second_car {
+    position: absolute;
+    right: 50px;
+    animation-name: moveCar2;
+    animation-duration: 10s;
+    animation-delay: 1ms;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes moveCar2 {
+    from {
+        right: 0px;
+    }
+    to {
+        right: 1350px;
+    }
+}
+@keyframes moveCar1 {
+    from {
+        left: -1350px; 
+    }
+    to {
+       left: -100px;
+    }
+}
+.trees {
+    width: 100px;
+    height: 200px;
+    background: linear-gradient(
+        to top,
+        #663701,
+        #614803,
+        #098633,
+        #00a02D,
+        #1fff50
+    );
+    clip-path: polygon(
+        50% 0,
+        75% 15%,
+        50% 10%,
+        80% 30%,
+        60% 25%,
+        85% 50%,
+        65% 45%,
+        100% 70%,
+        55% 60%,
+        55% 100%,
+        45% 100%,
+        45% 60%,
+        0 70%,
+        35% 45%,
+        15% 50%,
+        40% 25%,
+        20% 30%,
+        45% 10%,
+        25% 15%
+    );
+}
+.trees2 {
+    display: flex;
+    gap: 50px;
+    margin-top: 180px;
+    position: absolute;
+    top: 70px;
+    right: 50px;
+    animation-name: moveCar2;
+    animation-duration: 10s;
+    animation-delay: 1ms;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+.trees3 {
+    display: flex;
+    gap: 50px;
+    position: absolute;
+    top: 450px;
+    right: 0px;
+    animation-name: moveTrees;
+    animation-duration: 10s;
+    animation-delay: 1ms;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes moveTrees {
+    from {
+        left: 0px;
+    }
+    to {
+        left: 550px;
+    }
+}
+.moon {
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    border: 2px solid rgb(255, 153, 0);
+    background-color: rgb(255, 153, 0);
+    border-radius: 50%;
+    top: 30px;
+    right: 10px;
+    animation-name: moveMoon;
+    animation-duration: 10s;
+    animation-delay: 1ms;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+.moon_hider {
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    border: 2px solid #131862;
+    background-color: #131862;
+    border-radius: 50%;
+    top: -14px;
+    right: 15px;
+    animation-name: moveMoon;
+    animation-duration: 10s;
+    animation-delay: 1ms;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+.for_margin {
+    margin-top: 450px;
+}
+@keyframes moveMoon {
+    from {
+        right: 30px;
+    }
+    to {
+        top: 60px;
+    }
+}
+.road_2 {
+    position: relative;
+    width: 140px;
+    height: 300px;
+    border: 3px solid gray;
+    background-color: grey;
+    margin-top: 200px;
+
+}
+.line_2 {
+    border: 2px solid white;
+    height: 50px;
+    width: 13px;
+    margin-top: 20px;
+    margin-left: 57px;
+    background-color: white;
+}
